@@ -17,6 +17,12 @@ import { Resolver, parse } from '../resolver'
 describe('resolver', () => {
   describe('parse()', () => {
     it('returns parts', () => {
+      expect(parse('did:hs:0f49341a-20ef-43d1-bc93-de30993e6c52')).toEqual({
+        method: 'hs',
+        id: '0f49341a-20ef-43d1-bc93-de30993e6c52',
+        did: 'did:hs:0f49341a-20ef-43d1-bc93-de30993e6c52',
+        didUrl: 'did:hs:0f49341a-20ef-43d1-bc93-de30993e6c52',
+      })
       expect(parse('did:uport:2nQtiQG6Cgm1GYTBaaKAgr76uY7iSexUkqX')).toEqual({
         method: 'uport',
         id: '2nQtiQG6Cgm1GYTBaaKAgr76uY7iSexUkqX',

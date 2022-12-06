@@ -75,5 +75,8 @@
   },
   "resolutions": {
     "@babel/core": "7.18.5"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
